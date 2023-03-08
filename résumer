@@ -1,0 +1,5 @@
+Dans le cadre d'un projet d'agriculture de précision en collaboration avec Agroscope, JDC Electronic développe un système d'acquisition de données agricoles pour l'aide aux décisions. Le but de ce projet d'approfondissement sera la préétude d'un capteur d'humidité du feuillage afin d'agrandir le catalogue de capteur disponible.
+
+Le capteur aura pour but de mesurer la quantité d'eau accumulée par la rosée ou celle de précédente pluie présente à la surface des feuilles d'une plantation. Un capteur capacitif avec la forme et la surface d'une feuille sera pris comme point de départ, mais d'autres solutions devront être envisagées.
+
+L'objectif de ce travail sera l'analyse des différentes solutions avec un état de l'art ainsi que des mesures de la ou les solutions retenues afin de les valider. Pour au final fournir une spécification précise du capteur pour faciliter son future développement, qui pourra déboucher sur un travail de master.
