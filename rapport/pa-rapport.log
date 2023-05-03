@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.14)  2 MAY 2023 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.14)  2 MAY 2023 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**pa_rapport.tex
-(./pa_rapport.tex
+**pa-rapport.tex
+(./pa-rapport.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -80,6 +80,9 @@ Package babel Info: Making ? an active character on input line 422.
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
@@ -94,12 +97,15 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
+)
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip49
 \multirow@cntb=\count185
 \multirow@dima=\skip50
-\bigstrutjot=\dimen144
+\bigstrutjot=\dimen146
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/02/14 v1.6 Multi-file projects (package)
@@ -114,8 +120,8 @@ Package: bytefield 2017/09/15 v2.4 Network protocol diagrams
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count186
 \calc@Bcount=\count187
-\calc@Adimen=\dimen145
-\calc@Bdimen=\dimen146
+\calc@Adimen=\dimen147
+\calc@Bdimen=\dimen148
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
@@ -156,14 +162,14 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@cnth=\count191
 \Gm@cntv=\count192
 \c@Gm@tempcnt=\count193
-\Gm@bindingoffset=\dimen147
-\Gm@wd@mp=\dimen148
-\Gm@odd@mp=\dimen149
-\Gm@even@mp=\dimen150
-\Gm@layoutwidth=\dimen151
-\Gm@layoutheight=\dimen152
-\Gm@layouthoffset=\dimen153
-\Gm@layoutvoffset=\dimen154
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -184,8 +190,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count194
 \l__pdf_internal_box=\box48
 )
-(./pa_rapport.aux (./sections/title.aux) (./sections/introduction.aux))
-\openout1 = `pa_rapport.aux'.
+(./pa-rapport.aux (./title.aux) (./analysis.aux) (./state-of-art.aux))
+\openout1 = `pa-rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
@@ -208,13 +214,13 @@ LaTeX Info: Redefining \up on input line 40.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count195
-\scratchdimen=\dimen155
+\scratchdimen=\dimen157
 \scratchbox=\box49
 \nofMPsegments=\count196
 \nofMParguments=\count197
 \everyMPshowfont=\toks19
 \MPscratchCnt=\count198
-\MPscratchDim=\dimen156
+\MPscratchDim=\dimen158
 \MPnumerator=\count199
 \makeMPintoPDFobject=\count266
 \everyMPtoPDFconversion=\toks20
@@ -261,119 +267,97 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout2 = `sections/title.aux'.
+\openout2 = `title.aux'.
 
-(./sections/title.tex
-Runaway argument?
-width=.7\linewidth ]{figures/logo_mse} \end {minipage}\hfill \begin {\ETC.
-! Paragraph ended before \Gin@iii was complete.
-<to be read again> 
-                   \par 
-l.13 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+(./title.tex
+<figures/logo_mse.pdf, id=1, 164.66267pt x 15.10143pt>
+File: figures/logo_mse.pdf Graphic file (type pdf)
+<use figures/logo_mse.pdf>
+Package pdftex.def Info: figures/logo_mse.pdf  used on input line 5.
+(pdftex.def)             Requested size: 156.1498pt x 14.32114pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+<figures/logo_hesso.pdf, id=2, 217.81375pt x 112.42pt>
+File: figures/logo_hesso.pdf Graphic file (type pdf)
+<use figures/logo_hesso.pdf>
+Package pdftex.def Info: figures/logo_hesso.pdf  used on input line 10.
+(pdftex.def)             Requested size: 144.9955pt x 74.83554pt.
+) [1
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/logo_mse.pdf> <.
+/figures/logo_hesso.pdf>] [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 52.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 52.
 
-Overfull \hbox (234.13611pt too wide) in paragraph at lines 52--56
+Overfull \hbox (16.96411pt too wide) in paragraph at lines 53--57
 [][] 
  []
 
-(./pa_rapport.toc)
+[3] [4] (./pa-rapport.toc)
 \tf@toc=\write3
-\openout3 = `pa_rapport.toc'.
+\openout3 = `pa-rapport.toc'.
 
-\openout2 = `sections/introduction.aux'.
+ [5]
 
- (./sections/introduction.tex)
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 72.
 
-! LaTeX Error: Not in outer par mode.
+[6]
+\openout2 = `analysis.aux'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81 \begin{table}[!h]
-                      
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 109--109
+ (./analysis.tex
+Underfull \hbox (badness 2573) in paragraph at lines 39--39
 []\T1/cmr/m/n/10 Courant maxi-mum éta-blit en
  []
 
-
-! LaTeX Error: \begin{minipage} on input line 4 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.138 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./pa_rapport.aux (./sections/title.aux) (./sections/introduction.aux))
-! You can't use `\end' in internal vertical mode.
-\enddocument ... \endgroup \deadcycles \z@ \@@end 
-                                                  
-l.138 \end{document}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-! LaTeX Error: \begin{minipage} on input line 4 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.138 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.138 \end{document}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 )
-! Emergency stop.
-<*> pa_rapport.tex
-                  
-*** (job aborted, no legal \end found)
 
- 
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 72.
+
+[7
+
+]
+\openout2 = `state-of-art.aux'.
+
+ (./state-of-art.tex)
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 73.
+
+[8
+
+
+] (./pa-rapport.aux (./title.aux) (./analysis.aux) (./state-of-art.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3691 strings out of 481239
- 52656 string characters out of 5920376
- 320309 words of memory out of 5000000
- 18920 multiletter control sequences out of 15000+600000
+ 3787 strings out of 481239
+ 54044 string characters out of 5920376
+ 316812 words of memory out of 5000000
+ 19002 multiletter control sequences out of 15000+600000
  541587 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,13n,45p,1010b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 31i,10n,45p,283b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm2488.pfb>
+Output written on pa-rapport.pdf (8 pages, 203650 bytes).
+PDF statistics:
+ 85 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+
