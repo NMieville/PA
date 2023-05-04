@@ -1,0 +1,79 @@
+\documentclass[a4paper, french, 10pt]{article} % Type du document
+
+% compiler avec : pdflatex, bibtex, pdflatex, pdflatex
+
+
+% +---------------------------------------------------------------+
+% | Language
+% +---------------------------------------------------------------+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subfiles}
+\usepackage{bytefield}
+\usepackage{lastpage}
+
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, showframe=false]{geometry}
+
+
+%% A PERSONNALISER %%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\author}{Nathan Miéville}
+\newcommand{\prof}{Prof. Marizio Tognolini}
+\renewcommand{\title}{Leaf Wetness Sensor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{27.06pt}
+\pagestyle{fancy}
+% Header:
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[L]{\title} 
+\fancyhead[R]{} 
+% Footer:
+\pagenumbering{arabic}
+\fancyfoot{} % clear all footer fields
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[R]{Page \thepage~/~\pageref{LastPage}} 
+\fancyfoot[L]{\author }
+
+\begin{document}
+
+\include{title}
+
+\newpage
+\thispagestyle{empty}
+\
+\newpage
+\thispagestyle{empty}
+Accepté par la HES-SO Master (Suisse, Lausanne) sur proposition de\\[10pt]
+Professeur \prof, conseiller du projet d'approfondissement\\[30pt]
+Lausanne, le \today\\[40pt]
+
+\begin{tabular}{lll}
+\prof & \hspace{4cm} & Philippe Barrade\\
+Conseiller du PA & \hspace{4cm} & Responsable de la filière Electrical Engineering\\
+\end{tabular}
+
+\newpage
+\thispagestyle{empty}
+\section*{Remerciements}
+...
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+smartfarming, JDC, pluie, humidité, maladies
+
+\include{analysis}
+\include{state-of-art}
+\include{conception}
+\include{simulation}
+
+
+\end{document}
