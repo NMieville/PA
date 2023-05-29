@@ -1,0 +1,384 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{doi:10.1094/PDIS-05-14-0529-FE}{article}{}
+      \name{author}{6}{}{%
+        {{hash=8a7ff23c5950fbd411c88a8020cc5a62}{%
+           family={Rowlandson},
+           familyi={R\bibinitperiod},
+           given={Tracy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cfaf941b9f4da28295334a6b0b8f7bc9}{%
+           family={Gleason},
+           familyi={G\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2eb63b183686ddc253aa90f8feea23ed}{%
+           family={Sentelhas},
+           familyi={S\bibinitperiod},
+           given={Paulo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e9a284e0dae36f87891d26735ac8f335}{%
+           family={Gillespie},
+           familyi={G\bibinitperiod},
+           given={Terry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=82bbbe350d98ecad521cdcc5a1efe138}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod}}}%
+        {{hash=959af430b7b4af20aef072e5354f155b}{%
+           family={Hornbuckle},
+           familyi={H\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{97a9088d9faa35341af7bf9a739f001d}
+      \strng{fullhash}{e35f35e93e4cb2de47b69fa4e1158fd4}
+      \strng{bibnamehash}{e35f35e93e4cb2de47b69fa4e1158fd4}
+      \strng{authorbibnamehash}{e35f35e93e4cb2de47b69fa4e1158fd4}
+      \strng{authornamehash}{97a9088d9faa35341af7bf9a739f001d}
+      \strng{authorfullhash}{e35f35e93e4cb2de47b69fa4e1158fd4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Relationships between leaf wetness and plant diseases have been studied for centuries. The progress and risk of many bacterial, fungal, and oomycete diseases on a variety of crops have been linked to the presence of free water on foliage and fruit under temperatures favorable to infection. Whereas the rate parameters for infection or epidemic models have frequently been linked with temperature during the wet periods, leaf wetness periods of specific time duration are necessary for the propagule germination of most phytopathogenic fungi and for their penetration of plant tissues. Using these types of relationships, disease-warning systems were developed and are now being used by grower communities for a variety of crops. As a component of Integrated Pest Management, disease-warning systems provide growers with information regarding the optimum timing for chemical or biological management practices based on weather variables most suitable for pathogen dispersal or host infection. Although these systems are robust enough to permit some errors in the estimates or measurements of leaf wetness duration, the need for highly accurate leaf wetness duration data remains a priority to achieve the most efficient disease management.}
+      \field{journaltitle}{Plant Disease}
+      \field{note}{PMID: 30699706}
+      \field{number}{3}
+      \field{title}{Reconsidering Leaf Wetness Duration Determination for Plant Disease Management}
+      \field{volume}{99}
+      \field{year}{2015}
+      \field{pages}{310\bibrangedash 319}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1094/PDIS-05-14-0529-FE
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1094/PDIS-05-14-0529-FE
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1094/PDIS-05-14-0529-FE
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1094/PDIS-05-14-0529-FE
+      \endverb
+    \endentry
+    \entry{davis}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8f2d58e32d065296e0ddcff5f6509a9f}{%
+           family={Davis},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f2d58e32d065296e0ddcff5f6509a9f}
+      \strng{fullhash}{8f2d58e32d065296e0ddcff5f6509a9f}
+      \strng{bibnamehash}{8f2d58e32d065296e0ddcff5f6509a9f}
+      \strng{authorbibnamehash}{8f2d58e32d065296e0ddcff5f6509a9f}
+      \strng{authornamehash}{8f2d58e32d065296e0ddcff5f6509a9f}
+      \strng{authorfullhash}{8f2d58e32d065296e0ddcff5f6509a9f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Capteur d'humectation du feuillage, Vantage Pro / Pro2 sans fil}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.davis-meteo.com/6420.php
+      \endverb
+      \verb{url}
+      \verb http://www.davis-meteo.com/6420.php
+      \endverb
+    \endentry
+    \entry{spectrum}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bb1b7f047ad84fbfd3b18c287e613e57}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Spectrum\bibnamedelima Technologies},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb1b7f047ad84fbfd3b18c287e613e57}
+      \strng{fullhash}{bb1b7f047ad84fbfd3b18c287e613e57}
+      \strng{bibnamehash}{bb1b7f047ad84fbfd3b18c287e613e57}
+      \strng{authorbibnamehash}{bb1b7f047ad84fbfd3b18c287e613e57}
+      \strng{authornamehash}{bb1b7f047ad84fbfd3b18c287e613e57}
+      \strng{authorfullhash}{bb1b7f047ad84fbfd3b18c287e613e57}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Leaf Wetness Sensor}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.specmeters.com/store/leaf-wetness-sensor
+      \endverb
+      \verb{url}
+      \verb https://www.specmeters.com/store/leaf-wetness-sensor
+      \endverb
+    \endentry
+    \entry{caipos}{online}{}
+      \name{author}{1}{}{%
+        {{hash=714f94bce4e73aad011d3cad20ac1dd9}{%
+           family={Expo},
+           familyi={E\bibinitperiod},
+           given={Agri},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{714f94bce4e73aad011d3cad20ac1dd9}
+      \strng{fullhash}{714f94bce4e73aad011d3cad20ac1dd9}
+      \strng{bibnamehash}{714f94bce4e73aad011d3cad20ac1dd9}
+      \strng{authorbibnamehash}{714f94bce4e73aad011d3cad20ac1dd9}
+      \strng{authornamehash}{714f94bce4e73aad011d3cad20ac1dd9}
+      \strng{authorfullhash}{714f94bce4e73aad011d3cad20ac1dd9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Leaf wetness sensor CaiposLW}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.agriexpo.online/prod/caipos-gmbh/product-168642-14500.html
+      \endverb
+      \verb{url}
+      \verb https://www.agriexpo.online/prod/caipos-gmbh/product-168642-14500.html
+      \endverb
+    \endentry
+    \entry{meter}{online}{}
+      \name{author}{1}{}{%
+        {{hash=17c9c40b9db5a0983d1075a012c1f90a}{%
+           family={Meter},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{17c9c40b9db5a0983d1075a012c1f90a}
+      \strng{fullhash}{17c9c40b9db5a0983d1075a012c1f90a}
+      \strng{bibnamehash}{17c9c40b9db5a0983d1075a012c1f90a}
+      \strng{authorbibnamehash}{17c9c40b9db5a0983d1075a012c1f90a}
+      \strng{authornamehash}{17c9c40b9db5a0983d1075a012c1f90a}
+      \strng{authorfullhash}{17c9c40b9db5a0983d1075a012c1f90a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PHYTOS 31 Leaf Wetness Sensor}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.metergroup.com/en/meter-environment/products/phytos-31-leaf-wetness-sensor
+      \endverb
+      \verb{url}
+      \verb https://www.metergroup.com/en/meter-environment/products/phytos-31-leaf-wetness-sensor
+      \endverb
+    \endentry
+    \entry{evvos}{online}{}
+      \name{author}{1}{}{%
+        {{hash=85cd7986c7525eabbdbfc0bb734cd607}{%
+           family={Evvos},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{85cd7986c7525eabbdbfc0bb734cd607}
+      \strng{fullhash}{85cd7986c7525eabbdbfc0bb734cd607}
+      \strng{bibnamehash}{85cd7986c7525eabbdbfc0bb734cd607}
+      \strng{authorbibnamehash}{85cd7986c7525eabbdbfc0bb734cd607}
+      \strng{authornamehash}{85cd7986c7525eabbdbfc0bb734cd607}
+      \strng{authorfullhash}{85cd7986c7525eabbdbfc0bb734cd607}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Leaf Wetness Sensor}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.evvos.com/product/leaf-wetness-sensor/
+      \endverb
+      \verb{url}
+      \verb https://www.evvos.com/product/leaf-wetness-sensor/
+      \endverb
+    \endentry
+    \entry{HORNERO2017286}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a8ae9fc08ba520cde3bb7276e3ff817c}{%
+           family={Hornero},
+           familyi={H\bibinitperiod},
+           given={Gemma},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7989b0b1fab28575a4d49bc50fdba4e3}{%
+           family={Gaitán-Pitre},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={Jorge\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f16bb50b8ffd2e518504790f05d5a971}{%
+           family={Serrano-Finetti},
+           familyi={S\bibinithyphendelim F\bibinitperiod},
+           given={Ernesto},
+           giveni={E\bibinitperiod}}}%
+        {{hash=30bc28a2a439ed08a49f528c87d4637a}{%
+           family={Casas},
+           familyi={C\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=f806e340f8eeb2b83e0b1949011704ae}{%
+           family={Pallas-Areny},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Ramon},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6d0fbc6e8173ec6303af2e8911e924f}
+      \strng{fullhash}{8f8a6baf1725d4ca1e53d9f0cb7abfb9}
+      \strng{bibnamehash}{8f8a6baf1725d4ca1e53d9f0cb7abfb9}
+      \strng{authorbibnamehash}{8f8a6baf1725d4ca1e53d9f0cb7abfb9}
+      \strng{authornamehash}{b6d0fbc6e8173ec6303af2e8911e924f}
+      \strng{authorfullhash}{8f8a6baf1725d4ca1e53d9f0cb7abfb9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Foliar wetness plays an essential role in plant disease cycles and epidemic development yet no cost-effective leaf wetness sensors (LWSs) are available that could be deployed within large areas to better understand that role. Electronic LWSs comprise an artificial leaf and the electronic circuitry able to measure electrical impedance changes due to water film or drops on the leaf surface. We propose a simple, compact and low-cost electronic interface circuit (EIC) for artificial leaves based on capacitance changes. The circuit relies on the charge-transfer capacitive sensing method and it is implemented by a microcontroller unit (MCU), which offers computation and communication capabilities currently missing in commercial LWSs, This EIC can be used in custom and commercial artificial leaves hence suits studies that require a close emulation of particular plant leaves.}
+      \field{issn}{0168-1699}
+      \field{journaltitle}{Computers and Electronics in Agriculture}
+      \field{title}{A novel low-cost smart leaf wetness sensor}
+      \field{volume}{143}
+      \field{year}{2017}
+      \field{pages}{286\bibrangedash 292}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compag.2017.11.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168169917305197
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0168169917305197
+      \endverb
+      \keyw{Leaf wetness sensor,Capacitive sensor,Charge-transfer circuit,Precision agriculture,Plant disease}
+    \endentry
+    \entry{fdc1004}{online}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
+           family={Instruments},
+           familyi={I\bibinitperiod},
+           given={Texas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FDC1004}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ti.com/product/FDC1004
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/product/FDC1004
+      \endverb
+    \endentry
+    \entry{ad7745}{online}{}
+      \name{author}{1}{}{%
+        {{hash=28b3bb561577ce33894d378d824a0891}{%
+           family={DEVICES},
+           familyi={D\bibinitperiod},
+           given={ANALOG},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{fullhash}{28b3bb561577ce33894d378d824a0891}
+      \strng{bibnamehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{authorbibnamehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{authornamehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{authorfullhash}{28b3bb561577ce33894d378d824a0891}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{AD7745}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.analog.com/en/products/ad7745.html
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/en/products/ad7745.html
+      \endverb
+    \endentry
+    \entry{ad7150}{online}{}
+      \name{author}{1}{}{%
+        {{hash=28b3bb561577ce33894d378d824a0891}{%
+           family={DEVICES},
+           familyi={D\bibinitperiod},
+           given={ANALOG},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{fullhash}{28b3bb561577ce33894d378d824a0891}
+      \strng{bibnamehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{authorbibnamehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{authornamehash}{28b3bb561577ce33894d378d824a0891}
+      \strng{authorfullhash}{28b3bb561577ce33894d378d824a0891}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{AD7150}
+      \field{urlday}{16}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.analog.com/en/products/ad7150.html
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/en/products/ad7150.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
