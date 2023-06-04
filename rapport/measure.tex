@@ -2,7 +2,7 @@
 \section{Measure}
 
 \subsection{Conception}
-Afin de valider nos simulation nous allons procédé aux mesures de quelque configuration choisi. 6 PCB seront fabriqué. Nous avons choisi de représenter un nombre de piste de 10 et 5. Car nos simulation de 20 piste nous donne une capacité beaucoup trop élever. Pour chaque nombre de piste nous prenons deux rapport largeur et distance déjà simulé plus un plus faible pour étudié la possibilité de détecté de petite goutte. Le plan de cuivre du dessous est gardé pour tous. Pour les mesures les carte seront posé à plat nous ne voulons pas que ce qui se trouve en dessous aie une influence. Chaque PCB se verra attribué une lettre pour faciliter, par la suite, le nommage.
+Afin de valider nos simulation nous allons procéder aux mesures de quelques configurations choisies. 6 PCB seront fabriqué. Nous avons choisi de représenter un nombre de piste de 10 et 5. Car nos simulations de 20 pistes nous donnent une capacité beaucoup trop élevé. Pour chaque nombre de piste nous prenons deux rapport largeur et distance déjà simulé plus un plus faible pour étudier la possibilité de détecter de petite goutte. Le plan de cuivre du dessous est gardé pour tous. Pour les mesures, les cartes seront posées à plat et nous ne voulons pas être influencé par ce qui se trouve en dessous. Chaque PCB se verra attribué une lettre pour faciliter le nommage.
 
 \begin{table}[!ht]
 \begin{center}
@@ -20,11 +20,11 @@ F & 5 & 0.1 & 1.1 & 10.9
 \end{center}
 \end{table}
 
-Le pcb est construit en suivant le plan mécanique de la figure \ref{plan}. Nous avons ajouté deux connecteurs SMB pour le relié à la carte de développement du convertisseur. Ils ont ensuite été pannelisé afin de les produire en une commande.
+Le PCB est construit en suivant le plan mécanique de la figure \ref{plan}. Nous avons ajouté deux connecteurs SMB pour le relier à la carte de développement du convertisseur. Ils ont ensuite été pannelisé afin de les produire en une commande.
 
 \begin{figure}[!ht]
 \centering
- \includegraphics[width=10cm]{pannel.png}
+ \includegraphics[width=12cm]{pannel.png}
  \caption{Pannel prêt à la production}
 \end{figure}
 
@@ -32,19 +32,19 @@ Le pcb est construit en suivant le plan mécanique de la figure \ref{plan}. Nous
 
 \subsection{Measure capacitive par filtre RC}
 
-Avant de brancher nos cartes sur le convertisseur, nous allons effectuer une première mesures de la capacité afin de s'assure si nous somme ou non a l'intérieur des bornes. Nous n'avons pas a notre disposition un analyseur d’impédance capable de mesurer de si faible capacité. Nous placerons la capacité à mesuré dans un filtre RC et déterminerons son temps de charge. Nous utiliserons un microcontrôleur pour généré un signal carré. Il faudra prendre en compte l’impédance et la capacité de la sonde d'oscilloscope car nous somme dans le même ordre de grandeur.
+Avant de brancher nos cartes sur le convertisseur, nous allons effectuer une première mesure de la capacité afin de s'assurer d'être ou non à l'intérieur des bornes. Nous n'avons pas à notre disposition un analyseur d’impédance capable de mesurer de si faible capacité. Nous placerons la capacité à mesurer dans un filtre RC et déterminerons son temps de charge. Nous utiliserons un microcontrôleur pour générer un signal carré. Il faudra prendre en compte l’impédance et la capacité de la sonde d'oscilloscope car la résistance et la capacité mesurée se trouve dans le même ordre de grandeur.
 
 
 \begin{figure}[!ht]
 \centering
  \includegraphics[width=10cm]{schemaMesure.pdf}
  \begin{description}
- \item[G1] uController STM32 signal 3.3V
- \item[R1] 1 M ohm
+ \item[G1] Nucleo-L432KC, signal carré: 3.3V - 0V 10Hz
+ \item[R1] 1 M$\Omega$
  \item[C$_{mes}$] PCB A,B,C,D,E,F
- \item[R$_o$] 10 M ohm
- \item[C$_o$] TBD
- \item[Osc$_1$] Picoscope 6043CD
+ \item[R$_o$] 10 M$\Omega$
+ \item[C$_o$] à déterminer
+ \item[Osc$_1$] Picoscope 6403D
 \end{description}
  \caption{Schéma de mesure du filtre RC}
 \end{figure}
@@ -60,7 +60,7 @@ L'impédance de la sonde et de l'oscilloscope est fourni mais la capacité est v
 
 \newpage
 
-Pour déterminer la constante de temps nous utilisons le résultat de la résolution de l'équation différentiel d'un circuit RC: 
+Pour déterminer la constante de temps, nous utilisons le résultat de la résolution de l'équation différentiel d'un circuit RC: 
 
 \begin{equation}
  U_{c}(t) = U_{in} \cdot (1 - e^{-\frac{t}{RC}})
@@ -95,7 +95,7 @@ Le schéma équivalent que nous utiliserons pour les calculs est le suivant:
  \caption{Schéma équivalent Thévenin de mesure du filtre RC}
 \end{figure}
 
-$C_{mes}$ et $C_o$ se combine. En laissant vide $C_{mes}$ nous pouvons déterminer $C_o$. Nous le soustrairons aux prochaine mesures pour déterminer $C_{mes}$.
+$C_{mes}$ et $C_o$ se combine. En laissant vide $C_{mes}$ nous pouvons déterminer $C_o$. Nous le soustrairons aux prochaines mesures pour déterminer $C_{mes}$.
 
 \begin{figure}[!ht]
 \centering
@@ -103,40 +103,40 @@ $C_{mes}$ et $C_o$ se combine. En laissant vide $C_{mes}$ nous pouvons détermin
  \caption{Oscillogramme sans plaque}
 \end{figure}
 
-A 63\% de $U_{th}$ c'est à dire à 1.89 V nous observons un temps de \SI{10.68}{\micro\second} ce qui correspond à une capacité de $C_o = \frac{\tau}{R_{th}}= \SI{11.75}{\pico\farad}$. Nous pouvons à présent mesuré tous nos carte la même technique de mesure et en utilisant l'expression suivante:
+A 63\% de $U_{th}$ c'est à dire à 1.89 V nous observons un temps de \SI{10.68}{\micro\second} ce qui correspond à une capacité de $C_o = \frac{\tau}{R_{th}}= \SI{11.75}{\pico\farad}$. Nous pouvons à présent mesurer toutes nos cartes avec la même technique de mesure et en utilisant l'expression suivante:
 
 \begin{equation}
  C_{mes} = \frac{\tau}{R_{th}} - C_o
 \end{equation}
 
-Nous pouvons aussi comparer, lorsque cela est possible, ces mesures à nos simulations. 
+Nous comparons ces mesures à nos simulations lorsque cela est possible. 
 
 \begin{table}[!ht]
 \begin{center}
 \begin{tabular}[c]{lll}
 PCB & Mesure RC [pF] & Simulation [pF]\\
-A & 47.3 & ×\\
-B & 29.9 & ×\\
+A & 47.3 & 47.4\\
+B & 29.9 & 29.4\\
 C & 23.2 & ×\\
 D & 29.9 & 26.4\\
 E & 23.2 & 19.9\\
 F & 11.9 & ×
 \end{tabular}
-\caption{Résumé des mesures et de la simulation pour chaque carte }
+\caption{Résumé des mesures et de la simulation pour chaque carte (mesure complète: Annexe \ref{mesrc})}
 \end{center}
 \end{table}
 
 
-Les mesures sont proche de la simulation, on note une différence de 10\% à 20\%. Cette variation peut s'expliquer par plusieurs choses. D'une part la simulation prenais en compte une coupe mais sur nos carte des pistes supplémentaires sont présente aux extrémité pour connecter les lignes. Le connecteur peut aussi ajouter une capacité non négligeable. De plus notre mesure n'est pas parfaite et nous avons simplifié l'effet que peut avoir la sonde et l'oscilloscope. Nous somme dans un ordre de grandeur avec de très faible courant. La mesure est facilement influençable par des grandeur parasite que nous négligeons habituellement. 
+Les mesures sont très proche de la simulation, on note une différence de moins de 2\% pour A et B ainsi que 10\% à 20\% pour D et E. Cette variation peut s'expliquer par plusieurs choses. D'une part la simulation prenait en compte une coupe de pistes droite alors que sur nos cartes des pistes supplémentaires sont présentes aux extrémités pour connecter les pistes. Le connecteur peut aussi ajouter une capacité non négligeable. De plus notre mesure n'est pas parfaite et nous avons simplifié l'effet que peut avoir la sonde et l'oscilloscope. Nous somme dans un ordre de grandeur avec de très faible courant. La mesure est facilement influençable par des grandeur parasite que nous négligeons habituellement. 
 
-Ces mesures nous donne une certaine confiance dans nos simulation. Nous pourrons en refaire de plus complexe dans une suite du projet tout en ayant une idée de comment les résultat se traduise dans la réalité.  
+Ces mesures nous donnent une certaine confiance dans nos simulation. Nous pourrons en refaire de plus complexe dans une suite du projet tout en ayant une idée de comment les résultats se traduisent dans la réalité.  
 
 
 \subsection{Convertisseur Capacitif}
 
-Nous pouvons à présent essayer le convertisseur AD7150. Nous utiliserons sa carte de développement EVAL-AD7150. La carte est fourni avec un logiciel pour configurer et effectuer directement des mesures. Nous pouvons nous passer de microcontrôleur pour l'instant. s
+Nous pouvons à présent essayer le convertisseur AD7150. Nous utiliserons sa carte de développement EVAL-AD7150. La carte est fourni avec un logiciel pour configurer et effectuer directement des mesures. Nous pouvons nous passer de microcontrôleur pour l'instant.
 
-Nous allons commencer par mesurer la carte F. C'est la seul qui rentre dans les borne du convertisseur et pourra être mesuré directement. 
+Nous allons commencer par mesurer la carte F. C'est la seule qui rentre dans les borne du convertisseur et pourra être mesuré directement. 
 
 \begin{figure}[!ht]
 \centering
@@ -146,7 +146,7 @@ Nous allons commencer par mesurer la carte F. C'est la seul qui rentre dans les 
 
 \newpage
 
-Pour cette première mesure le convertisseur est configuré avec une sensibilité de 2pF. Le CapDAC qui est l'offset est trouvé en le modifiant jusqu'à que la mesure ne sature plus. 
+Pour cette première mesure le convertisseur est configuré avec une sensibilité de 2pF. Le CapDAC qui est l'offset est trouvé en le modifiant jusqu'à ce que la mesure ne sature plus. 
 
 \begin{figure}[!ht]
 \centering
@@ -156,7 +156,7 @@ Pour cette première mesure le convertisseur est configuré avec une sensibilit�
 
 Nous mesurons une capacité de 8.1 pF pour 11.9 pF mesuré par RC. Cette différence s'explique d'une part par la précision d'une mesure RC expliqué précédemment et d'une autre par problème propre au convertisseur AD7150. 
 
-Nous avons remarqué lors de nos mesure que lorsque nous approchons la main de la carte la capacité mesuré diminue fortement ce qui ne se produisait pas avec le filtre RC. Cela viens de l’influence de la capacité parasite à la masse. Aucun des deux pôle de la carte ne sont relié à la masse. Si une capacité apparaît entre un des pôle et la masse des charge seront perdue et ne seront pas mesuré par le convertisseur ce qui diminuera la capacité observé. Même si nous somme éloigner du capteur une capacité parasite est présente en partie à cause du plan de masse de la carte de développement. Nous ne pourrons malheureusement pas mesurer correctement la capacité absolue de nos cartes. 
+Nous avons remarqué, lors de nos mesures, que lorsque nous approchons la main de la carte la capacité mesuré diminue fortement, ce qui ne se produisait pas avec le filtre RC. Cela viens de l’influence de la capacité parasite à la masse. Aucuns des deux pôle de la carte ne sont reliés à la masse. Si une capacité apparaît entre un des pôle et la masse des charges seront perdues et ne seront pas mesurées par le convertisseur ce qui diminuera la capacité observée. Même si nous somme éloigné, du capteur une capacité parasite est présente en partie à cause du plan de masse de la carte de développement. Nous ne pourrons malheureusement pas mesurer correctement la capacité absolue de nos cartes. 
 
 Nous pouvons cependant commencer à détecter à titre indicatif des gouttes d'eau. 
 
@@ -167,6 +167,6 @@ Nous pouvons cependant commencer à détecter à titre indicatif des gouttes d'e
 \end{figure}
 
 \newpage
-Ces mesures ne permettent pas de sortir des chiffre précis mais nous introduis le comportement de l'eau sur notre capteur. Pour pouvoir essayer les autre carte malgré qu'elles soient hors borne nous avons mis une capacité de 10pF en série avec notre dipôle. Sur la carte de développement nous remplaçons par notre capacité une résistance de 0 ohm qui fait le pont entre le convertisseur et le connecteur. La capacité parasite de masse est trop compliqué à calculé dans cette configuration. Nous prendrons pas en compte la valeur absolue de la mesure mais seulement l’influence de l'eau. Il apparaît clairement qu'avec des pistes plus serré les gouttes son plus facilement détecter malgré la perte de sensibilité du à l'ajout d'une capacité en série. 
-La taille et la position de la goutte influence beaucoup la détection de celle-ci. Un travail supplémentaire devra être effectué pour optimiser le peigne. La simulation en 2 dimension ne suffira pas pour représenté la géométrie et le placement d'une goutte d'eau.
+Ces mesures ne permettent pas de sortir des chiffre précis, mais nous introduit le comportement de l'eau sur notre capteur. Pour pouvoir essayer les autres cartes, malgré qu'elles soient hors borne, nous avons mis une capacité de 10pF en série avec notre dipôle. Sur la carte de développement nous remplaçons par notre capacité une résistance de 0 ohm qui fait le pont entre le convertisseur et le connecteur. La capacité parasite de masse est trop compliqué à calculer dans cette configuration. Nous ne prendrons pas en compte la valeur absolue de la mesure mais seulement l’influence de l'eau. Il apparaît clairement qu'avec des pistes plus serrées, les gouttes sont plus facilement détectées malgré la perte de sensibilité dû à l'ajout d'une capacité en série. 
+La taille et la position de la goutte influence beaucoup la détection de celle-ci. Un travail supplémentaire devra être effectué pour optimiser le peigne. La simulation en 2 dimension ne suffira pas pour représenter la géométrie et le placement d'une goutte d'eau.
 

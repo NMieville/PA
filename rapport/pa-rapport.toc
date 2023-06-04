@@ -1,8 +1,8 @@
 \babel@toc {french}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{6}{}%
 \contentsline {section}{\numberline {2}Etat de l'art}{7}{}%
-\contentsline {section}{\numberline {3}Analyse fonctionnel}{9}{}%
-\contentsline {subsection}{\numberline {3.1}Besoin}{9}{}%
+\contentsline {section}{\numberline {3}Analyse fonctionnelle}{9}{}%
+\contentsline {subsection}{\numberline {3.1}Besoins}{9}{}%
 \contentsline {subsection}{\numberline {3.2}Fonction principale et contrainte }{9}{}%
 \contentsline {paragraph}{FP1}{10}{}%
 \contentsline {paragraph}{FC1}{10}{}%
@@ -31,3 +31,5 @@
 \contentsline {subsection}{\numberline {6.3}Convertisseur Capacitif}{27}{}%
 \contentsline {section}{\numberline {7}Conclusion}{30}{}%
 \contentsline {section}{\numberline {8}Bibliographie}{31}{}%
+\contentsline {section}{\numberline {A}Mesures capacitives RC}{32}{}%
+\contentsline {section}{\numberline {B}Datasheet AD7150}{35}{}%

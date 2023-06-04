@@ -23,11 +23,13 @@ sorting=none
 \addbibresource{biblio.bib}
 
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm, showframe=false]{geometry}
+\usepackage{appendix}
+\usepackage{pdfpages}
 
 
 %% A PERSONNALISER %%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\author}{Nathan Miéville}
-\newcommand{\prof}{Prof. Marizio Tognolini}
+\newcommand{\prof}{Maurizio Tognolini }
 \renewcommand{\title}{Leaf Wetness Sensor}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -66,7 +68,7 @@ Conseiller du PA & \hspace{4cm} & Responsable de la filière Electrical Engineer
 \newpage
 \thispagestyle{empty}
 \section*{Remerciements}
-...
+Je tiens à remercier JDC Electronic d'avoir accepté le projet et de m'avoir soutenu dans sa réalisation. Je remercie aussi le professeur \prof pour m'avoir suivi et conseillé durant ce travail.
 
 \newpage
 \thispagestyle{empty}
@@ -77,7 +79,14 @@ Conseiller du PA & \hspace{4cm} & Responsable de la filière Electrical Engineer
 \section{Introduction}
 L'Agriculture doit évoluer pour faire face aux défis de notre époque. De nombreuses solutions sont en développement pour aider les agriculteurs à produire durablement, en respect avec la nature et en utilisant le moins de ressource possible tout en gardant une production suffisante pour atteindre la souveraineté alimentaire. L'agriculture de précision est une des solutions à toutes ces problématiques. L'objectif est d'utiliser la technologie pour produire mieux. En observant et en mesurant le plus de variable possible nous somme capable, grâce à des modèles, de prévoir les besoins d'une plantation et ainsi mieux optimiser la production en consommant moins de ressource tel que l'eau, les engrais ou les pesticides. 
 
-Pour répondre à cette demande,JDC Electronic s'est lancé le défit de proposer une solution complète, facilement déployable par les agriculteurs. Nous voulons proposer un assortiment de capteur centralisé sur une seule plateforme. Cette plateforme embarquera plusieurs modèles pour différent aspect de la production. L'interface sera facilement lisible pour un agriculteur et donnera des indications claires en temps réel sur les moyens d’optimisations. Un projet innosuisse à été lancé en 2021 en collaboration avec Agroscope et l'institut IICT de l'heig-vd. Il portait essentiellement sur la mesure et l'analyse du diamètre d'un fruit au cours de sa croissance en fonction de son arrosage. L'objectif est d'avoir un meilleur contrôle sur l'eau. Ce projet a permis le développement de l'écosystème des capteurs et de la plateforme et a abouti à des mesures en conditions réelles dans des plantations de professionnels. Les étapes suivantes sont l’agrandissement de la gamme de capteur, la mise en production puis la commercialisation.
+Pour répondre à cette demande, JDC Electronic s'est lancé le défi de proposer une solution complète, facilement déployable par les agriculteurs. Nous voulons proposer un assortiment de capteur centralisé sur une seule plateforme. Cette plateforme embarquera plusieurs modèles pour différent aspect de la production. L'interface sera facilement lisible pour un agriculteur et donnera des indications claires en temps réel sur les moyens d’optimisations. Un projet innosuisse à été lancé en 2021 en collaboration avec Agroscope \cite{agro} et l'institut IICT de l'heig-vd. Il portait essentiellement sur la mesure et l'analyse du diamètre d'un fruit au cours de sa croissance en fonction de son arrosage. L'objectif est d'avoir un meilleur contrôle sur l'eau. Ce projet a permis le développement de l'écosystème des capteurs et de la plateforme et a abouti à des mesures en conditions réelles dans des plantations de professionnels. Les étapes suivantes sont l’agrandissement de la gamme de capteur, la mise en production puis la commercialisation.
+
+\begin{figure}[!ht]
+\centering
+ \includegraphics[width=10cm]{smart-dendro-apfel-tomate}
+ \caption{Capteur de mesure du diamètre d'un fruit}
+\end{figure}
+
 
 Une des voies que JDC Electronic aimerait développer est la prévention des maladies agricoles. Les plantations sont les proies de nombreuses maladies qui peuvent être dévastatrices. Des modèles existent pour aider les agriculteurs à traiter au bon moment et éviter de devoir retraiter de nombreuses fois ou même de perdre leur production. L'un des modèle les plus utilisé \cite{doi:10.1094/PDIS-05-14-0529-FE}  se base sur la durée d'humectation. C'est-à-dire sur le temps que les gouttes créés par la rosée ou la pluie restent sur la feuille. Un capteur d'humectation permet d'obtenir cette grandeur.
 
@@ -99,5 +108,7 @@ L'objectif de ce travail sera d'effectuer une pré-étude afin de déterminer la
 \section{Bibliographie}
 
 \printbibliography
+
+\include{annexe}
 
 \end{document}
